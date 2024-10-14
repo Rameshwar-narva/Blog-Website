@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+.header-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+.post-tags {
+    display: flex; /* Align tags in a row */
+}
+
+.tag {
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin-right: 5px; /* Space between tags */
+    display: inline-block; /* Make the tag behave like a button */
+}
+
+.tag:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+
+/* Styles for tablets and smaller screens */
+@media (max-width: 800px) {
+    body {
+        font-size: 8px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+/* Add space between the icons */
+.icon-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    header {
+        padding: 1rem;
+    }
+    .hero-image {
+        height: 200px;
+    }
+    .comment-section input, .comment-section textarea {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+
+header {
+    padding: 2rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    flex: 2;
+    text-align: right;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 0.4rem;
+    font-size: 1rem;
+    width: 150px;
+}
+
+.search-form button {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #777;
+}
+.social-icons {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Change the hover color */
+}
+.icon-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .icon-group {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-group {
+        font-size: 1rem;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1a1a2e;
+    color: white;
+    height: 100px;
+    position: relative;
+}
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header-center h1 {
+    font-size: 2rem; /* Adjust the size as needed */
+    margin: 0;
+}
+
+.header-left, .header-right {
+    flex: 1;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+nav ul li a:hover {
+    color: #0056b3; /* Change text color on hover */
+}
+
+.hero-image {
+    background-image: url('https://plus.unsplash.com/premium_photo-1661918785181-378c2e53cb42?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGlzY292ZXJ5fGVufDB8fDB8fHww'); /* Replace with your image URL */
+    height: 600px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white; /* Text color */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* Large font size */
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+
+section {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.blog {
+    border: 1px solid #ccc;
+    padding: 20px; /* Increased padding */
+    margin-bottom: 30px; /* Space between posts */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background for posts */
+    max-width: 800px; /* Maximum width of the post */
+    margin-left: auto; /* Center the post */
+    margin-right: auto; /* Center the post */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blog-post {
+    position: relative;
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 20px;
+    width: 30%;
+}
+
+.blog-image {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.blog-image h3 {
+    margin: 0;
+    padding: 1rem;
+}
+
+
+.blog-post {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+}
+.post-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.comment-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.comment-section input, .comment-section textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.comment-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#commentsList {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #333;
+}
+
+.comment h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
